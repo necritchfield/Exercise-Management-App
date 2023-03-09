@@ -1,0 +1,249 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+                        
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&display=swap');
+
+         /* @import '../node_modules/modern-normalize/modern-normalize.css';
+          /* npm install modern-normalize 
+            Resets elements for browser consistancy.  
+            http://nicolasgallagher.com/about-normalize-css/ 
+          */
+
+/*   ----- Variables  -----  */
+:root {
+}
+
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  color: #0008C1;
+  background-color: #E6CBA8;
+  font-family: Cairo;
+  font-size: 16px;
+  margin: 10px 0;
+  padding: 2%;
+}
+
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  background-color: #2146C7;
+  color: #FDF0E0;
+  border: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 10px 0;
+  padding: 2%;
+  text-decoration: underline;
+  vertical-align: center;
+  text-align: center;
+}
+nav a {
+  background-color: #2146C7;
+  color: #FDF0E0;
+  border: 5px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 40px;
+  margin: 10px 0;
+  padding: 2%;
+  text-decoration: underline;
+  vertical-align: center;
+}
+
+nav a:hover {
+  background-color: #2146C7;
+  color: #E6CBA8;
+  border: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 40px;
+  margin: 10px 0;
+  padding: 2%;
+  text-decoration: underline;
+  vertical-align: center;
+}
+
+.md:hover {
+    cursor: pointer;
+}
+
+/*  ----- Page layout blocks -----  */
+header {
+  background-color: #E6CBA8;
+  color: #0008C1;
+  border: 2px dashed #0008C1;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2% 0;
+  padding: 0 2%;
+}
+main {
+  background-color: #E6CBA8;
+  color: #0008C1;
+  text-align: center;
+  border: 2px dashed;
+  padding: 2%;
+}
+section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+    #gallery1 {}
+    #gallery2 {}
+div {}
+aside {}
+
+footer {
+  background-color: #E6CBA8;
+  color: #0008C1;
+  border: 2px dashed #0008C1;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin: 2% 0;
+  padding: 0 2%;
+}
+
+/*  -----  Typography  ----- */
+p {}
+br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}
+
+h1, h2, h3, h4, h5, h6 {} /* Define consistant font family.*/
+h1 {}
+h2 {}
+h3 {}
+h4 {}
+h5 {}
+h6 {}
+
+abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}
+
+/*  ----- Coding or instructional typography ----- */
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}
+
+/*  ----- Table ----- */
+table {
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+caption {}
+thead {}
+tbody {}
+tfoot {}
+tr {
+  border: 1px solid;
+  padding: 15px;
+}
+  tr:nth-child(even) {}
+th {
+  border: 1px solid;
+  padding: 15px;
+}
+td {
+  border: 1px solid;
+  padding: 15px;
+}
+  td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+fieldset {}
+  legend {}
+label {}
+  button {
+    font-family: Cairo;
+    font-size: 16px;
+    padding: 1%;
+  }
+  input, select {
+    font-family: Cairo;
+    font-size: 16px;
+    padding: 1%;
+    margin-right: 8px;
+  }
+  output {}
+  meter {}
+  progress {}
+  select {}
+    optgroup {}
+    option {}
+  textarea {}
+
+/* ----- Media ----- */
+figure {}
+  figcaption {}
+img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  */
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
